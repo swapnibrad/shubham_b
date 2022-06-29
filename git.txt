@@ -1,0 +1,97 @@
+git config --help
+git config user.name 'swapnil'
+	
+git status
+git add demo_1.txt
+git commit -m "my first commit for demo_1"
+git remote add nibrad git@github.com:swapnibrad/nibrad.git
+git remote -v
+git push nibrad master
+git push nibrad master
+git clone git@github.com:swapnibrad/nibrad.git
+git remote origin master
+git push origin master
+ssh-keygen -C "demo"
+git remote -v
+git push origin master
+git remote -v
+git remote remove origin git@github.com:swapnibrad/nibrad.git
+
+git remote origin master
+git remote add origin master
+git remote -v
+  333  git remote add origin master git@github.com:swapnibrad/nyn.git
+  334  git remote add master git@github.com:swapnibrad/nyn.git
+  335  git remote add main git@github.com:swapnibrad/nyn.git
+  336  git pul origin
+  337  git pull origin
+  338  git pull origin master
+  339  git pull nyn master
+  340  git pull test master
+  341  git pull origin master
+  342  git remote add origin git@github.com:swapnibrad/nibrad.git
+  343  git remote show
+  344  git remote show master
+  345  git remote show origin
+  346  git push nyn main
+  347  git pull nyn main
+  348  git config user.name 'swapnil'
+  349  git config user.email 'swapnibrada@gmail.com'
+  350  git push nyn main
+  351  git push origin main
+  352  git init
+  353  ls -a
+  354  git config user.name 'swapnil'
+  355  git config user.email 'swapnibrada@gmail.com'
+  356  git add .
+  357  git commit -m 'top'
+  358  git push origin master
+  359  git remote -v
+  360  git remote remove main
+  361  git remote remove master
+  362  git remote remove origin
+  363  git remote -v
+  364  git remote add master git@github.com:swapnibrad/tom.git
+  365  git remote -v
+  366  git push tom master
+  367  git push origin master
+  368  git remote add origin
+  369  git remote add origin ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkBIF3HS6hxKpUcIrWwx1yYl38qBFyog4lWIp+Xsf1dyUwEhAW8RdF0ZlOasP8dRvR4Z8PoVqNPVmVCYCpHg5KN1vfG7q9fJVNvB0WVy7jOth1JL9PATgXBCVAG95REeXh8AG3/vN/qiVg/1xLwD5qkvffSU16oLeG4+wbZu15gEg4ckkpEL3umy/Tft5s5ux+k9mABhBiJ24BKYysk9V/7OScoBFB2FRr0G77bi+x1oy3AQnuISS4iyT1+vKRSJfrnBWwTkhSiUMOGof1WCwt2+pz7pvTc2PvhazDhTUg/LRedSTPBOa82JIHQ+t4N/4ZzTWhXHHg8tuKfZkI8KAYyEtiJOTaEfLWwnaAqAoQ0YkNHrIT8fz0dK4SESO7XqRrLREhZfeNYuVzE7SDo66w5t+SRaFDO/PBp43vZBiRmuHCJljpAHKlJ0OzccZkfD+ndCljHO83qE91B2xYa74HyrhbEjhS3Np2bKt3F8YDJJCiT05PvbJp/AdZNJ49dOc= demo
+  370  git remote add origin git@github.com:swapnibrad/tom.git
+  371  git push origin master
+  372  git remote -v
+  373  ssh-keygen -C "munna"
+  374  cd ..
+  375  git clone git@github.com:swapnibrad/tom.git
+  376  ls
+  377  cd demo/
+  378  git branch
+  379  git branch rahul
+  380  git branch
+  381  git checkout rahul
+  382  touch fire_231
+  383  git add
+  384  git add .
+  385  git commit -m "talk"
+  386  git checkout master
+  387  ls
+  388  git checkout rahul
+  389  ls
+  390  git checkout master
+  391  ls
+  392  git push origin rahul git@github.com:swapnibrad/tom.git
+  393  git push origin master  git@github.com:swapnibrad/tom.git
+  394* git push  master git@github.com:swapnibrad/tom.git
+  395  git push origin master
+  396  git push origin rahul
+  397  git pull origin master
+  398  ls
+  399  cat filr_10
+  400  git pull origin rahul
+  401  cat filr_10
+  402  history
+ 
+- git log --oneline
+- git revert <commit ID>
+- git reset <file name>  ...(from staging area to working dir.)
+- git checkout -b <new branch name>
