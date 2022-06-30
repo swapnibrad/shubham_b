@@ -3,6 +3,11 @@
   vars: 
     URL: cloudblitz.in
   tasks:
-  - name: Print messages
+  
+  - name: Print messages_1
     debug:
       msg: "{{URL}}"
+
+  - name: Print messages_2
+    debug:
+      msg: "{{URL}}"    
