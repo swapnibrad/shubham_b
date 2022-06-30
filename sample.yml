@@ -1,6 +1,6 @@
 - name: Playbook1
   hosts: all
-  vars: url.yml
+  vars_files: url.yml
   tasks:
 
   - name: Print messages_1
