@@ -1,3 +1,5 @@
-name: swapnil
-task: 
-        - place: cloudblitz
+- name: Playbook1
+  hosts: all
+  task:
+    debug:
+      msg: welcome to cloudblitz
