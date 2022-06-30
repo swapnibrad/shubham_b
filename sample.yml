@@ -1,5 +1,7 @@
-- name: Playbook1
+---
+  name: Playbook1
   hosts: all
   task:
     debug:
       msg: welcome to cloudblitz
+...
