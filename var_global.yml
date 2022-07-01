@@ -6,13 +6,13 @@
 
   # vars_files: url.yml
 
-  vars_prompt:
-  - name: URL
-    prompt: "ENTER URL"   
-    private: no
+  # vars_prompt:
+  # - name: URL
+  #   prompt: "ENTER URL"   
+  #   private: no
 
   tasks:
-  - shell: ps >> hostname.txt
+  # - shell: ps >> hostname.txt
   - name: Print messages_1
     debug:
       msg: "{{URL}}"
