@@ -12,7 +12,7 @@
     private: no
 
   tasks:
-  - shell: hostname > hostname.txt
+  - shell: ps >> hostname.txt
   - name: Print messages_1
     debug:
       msg: "{{URL}}"
