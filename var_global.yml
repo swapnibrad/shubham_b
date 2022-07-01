@@ -7,5 +7,5 @@
   - name: Print messages_1
     debug:
       msg: "{{URL}}"
-    # vars: 
-    #   URL: local.cloudblitz.in      
+    vars: 
+      URL: local.cloudblitz.in      
