@@ -2,10 +2,17 @@
   hosts: all
   # vars: 
   #   URL: global.cloudblitz.in
-  vars_files: url.yml
+
+  # vars_files: url.yml
+
+  vars_prompt:
+  - name: URL
+    prompt: "ENTER URL"   
+
   tasks:
   - name: Print messages_1
     debug:
       msg: "{{URL}}"
     # vars: 
-    #   URL: local.cloudblitz.in      
+    #   URL: local.cloudblitz.in   
+
