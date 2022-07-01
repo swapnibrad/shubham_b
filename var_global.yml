@@ -1,5 +1,6 @@
 - name: Playbook1
   hosts: all
+
   # vars: 
   #   URL: global.cloudblitz.in
 
@@ -11,6 +12,7 @@
     private: no
 
   tasks:
+  - shell: hostname
   - name: Print messages_1
     debug:
       msg: "{{URL}}"
