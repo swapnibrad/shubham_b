@@ -8,6 +8,7 @@
   vars_prompt:
   - name: URL
     prompt: "ENTER URL"   
+    private: no
 
   tasks:
   - name: Print messages_1
