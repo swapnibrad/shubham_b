@@ -3,4 +3,4 @@
   tasks:
     - name: print the host details
       debug:
-        msg: "Domain name of ansible: {{ansible_domain}}"
+        msg: "Domain name of ansible: {{ansible_mounts.uuid}}"
