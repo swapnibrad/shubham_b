@@ -1,16 +1,18 @@
 - name: playbook-4
   hosts: all
-  become: true
+  
   tasks:
     - name: escalation for users
       shell: id
       register: out
+      
 
     - name: escalation print
       debug:
         msg: "print escalation of server: {{out}}"   
 
     - name: install services
+      become: true
       apt:
         name: nginx
         state: latest
