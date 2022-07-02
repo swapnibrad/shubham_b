@@ -1,5 +1,6 @@
 - name: playbook-5
   hosts: all
-  task:
+  tasks:
     - name: print url
-      msg: "{{URL}}"
+      debug:
+        msg: "{{URL}}"
