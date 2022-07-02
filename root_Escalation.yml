@@ -12,5 +12,5 @@
 
     - name: install services
       apt:
-        name: tree
+        name: nginx
         state: latest
