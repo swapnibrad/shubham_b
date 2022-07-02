@@ -4,14 +4,14 @@
     - name: print the host details_1
       debug:
         msg: "Domain name of ansible: {{ansible_lo.features.rx_udp_gro_forwarding}}"
-      tags: 1
+      tags: domain
 
     - name: print the host details_2
       debug:
         msg: "product_version name of ansible: {{ansible_product_version}}"
-      tags: 2
+      tags: prod_ver
 
     - name: print the host details_3
       debug:
         msg: "Distribution name of ansible: {{ansible_distribution}}"  
-      tags: 3            
+      tags: dist           
