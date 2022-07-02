@@ -1,6 +1,6 @@
 - name: playbook - 3
   hosts: all
-  gather_facts: no
+  # gather_facts: no
   tasks:
     - name: print the host details_1
       debug:
