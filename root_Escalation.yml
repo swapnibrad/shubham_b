@@ -11,5 +11,5 @@
 
     - name: install services
       apt-get:
-        name: tree
-        state: latest
+        - name: tree
+          state: latest
