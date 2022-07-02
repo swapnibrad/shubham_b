@@ -3,7 +3,7 @@
   tasks:
     - name: escalation for users
       shell: id
-      register: outsd
+      register: out
 
     - name: escalation print
       debug:
