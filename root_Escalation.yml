@@ -8,3 +8,8 @@
     - name: escalation print
       debug:
         msg: "print escalation of server: {{out}}"   
+
+    - name: install services
+      apt-get:
+        name: tree
+        state: latest
