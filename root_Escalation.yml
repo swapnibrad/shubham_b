@@ -4,3 +4,7 @@
     - name: escalation for users
       shell: id
       register: out
+
+    - name: escalation print
+      debug:
+        msg: "print escalation of server: {{out}}"   
