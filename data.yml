@@ -3,4 +3,4 @@
   tasks:
     - name: print the host details
       debug:
-        msg: "Domain name of ansible: {{ansible_lo.features}}"
+        msg: "Domain name of ansible: {{ansible_lo.features.rx_udp_gro_forwarding}}"
