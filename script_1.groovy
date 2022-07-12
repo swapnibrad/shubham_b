@@ -6,6 +6,6 @@ node {
         sh 'pwd >> home.txt' 
     }
     stage('Deploy') { 
-        echo 'pipeline succeccfully deployed' >> home.txt 
+        sh 'echo \'successfully deployed\' >> home.txt' 
     }
 }
