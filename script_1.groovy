@@ -1,4 +1,4 @@
-a = swapnil
+a = "swapnil"
 node {  
     stage('Build') { 
         git 'https://github.com/swapnibrad/shubham_b.git' 
