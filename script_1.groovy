@@ -1,4 +1,3 @@
-a=swapnil
 node {  
     stage('Build') { 
         git 'https://github.com/swapnibrad/shubham_b.git' 
@@ -7,6 +6,6 @@ node {
         echo 'successfully deployed build stage' 
     }
     stage('Deploy') { 
-        sh 'echo $a' 
+        sh 'echo a' 
     }
 }
