@@ -1,26 +1,12 @@
-pipeline {
-    agent any 
-    stages {
-        stage('git pull') { 
-            steps {
-                git 'https://github.com/swapnibrad/shubham_b.git' 
-            }
-        }
-        
-        stage('build') { 
-            steps {
-                echo 'successfully deployed build stage' 
-            }
-        }
-        stage('test') { 
-            steps {
-                sh 'mkdir cloudblitz_b_19'
-            }
-        }
-        stage('uat') { 
-            steps {
-                echo 'successfully deployed uat envirenment'
-            }
-        }
+a=swapnil
+node {  
+    stage('Build') { 
+        git 'https://github.com/swapnibrad/shubham_b.git' 
+    }
+    stage('Test') { 
+        echo 'successfully deployed build stage' 
+    }
+    stage('Deploy') { 
+        sh 'echo $a' 
     }
 }
