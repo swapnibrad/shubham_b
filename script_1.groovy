@@ -10,6 +10,6 @@ node {
         sh 'echo \'successfully deployed\' >> home.txt' 
     }
     stage('Deploy') { 
-        sh 'echo $a >> home.txt' 
+        echo $a >> home.txt
     }
 }
