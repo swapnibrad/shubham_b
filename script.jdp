@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+    stages {
+        stage('GIT PULL') { 
+            steps {
+                git 'https://github.com/swapnibrad/shubham_b.git'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'hello world' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                sh 'mkdir cloud'
+            }
+        }
+    }
+}
