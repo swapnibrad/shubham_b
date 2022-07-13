@@ -15,4 +15,6 @@
     - name: print the host details_3
       debug:
         msg: "Distribution name of ansible: {{ansible_distribution}}"  
-      tags: dist           
+      tags: dist    
+
+       

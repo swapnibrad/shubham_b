@@ -1,0 +1,7 @@
+
+- name: relic-playbook
+  hosts: all
+  become: true
+  tasks:
+          - name: new relic installation
+            shell: "curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=NRAK-UFJ3M6BPUWQPOE8TLDAKH8RKI9O NEW_RELIC_ACCOUNT_ID=3550231 /usr/local/bin/newrelic install"
