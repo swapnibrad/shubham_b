@@ -3,6 +3,6 @@ job('test') {
         shell('echo Hello World!')
     }
     steps {
-        shell('pwd' >> file.txt)
+        shell('echo good morning')
     }
 }
