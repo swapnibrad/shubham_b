@@ -18,4 +18,5 @@ job('git item') {
     }
     steps {
          shell('echo successfully implemented item')
+    }
 }
