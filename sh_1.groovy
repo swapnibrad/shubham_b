@@ -7,7 +7,7 @@
 //     }
 // }
 
-job('git item') {
+job('job_1') {
     scm {
         git {
             remote {
