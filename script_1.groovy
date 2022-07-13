@@ -13,3 +13,12 @@ node {
         sh 'echo $a'
     }
 }
+
+
+
+
+job('demo') {
+    steps {
+        shell('echo Hello World!')
+    }
+}
