@@ -15,7 +15,13 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                deploy adapters: [tomcat8(path: '', url: 'http://13.53.139.19:8080/')], contextPath: null, war: '**/*.war'
+                sh 'mv /home/ubuntu/workspace/pipeline_project/target/studentapp-2.2-SNAPSHOT.war /practice/apache-tomcat-8.5.81/webapps'
+
+            }
+        }
+        stage('start tomcat') { 
+            steps {
+                sh ' ./practice/apache-tomcat-8.5.81/bin/catalina.sh start'
             }
         }
     }
