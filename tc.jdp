@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent swapnil 
     stages {
         stage('GIT PULL') { 
             steps {
