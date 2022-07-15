@@ -1,5 +1,7 @@
 pipeline {
-    agent {swapnil} 
+    agent {
+      lable 'swapnil'
+      } 
     stages {
         stage('GIT PULL') { 
             steps {
@@ -16,5 +18,4 @@ pipeline {
                 deploy adapters: [tomcat8(path: '', url: 'http://52.66.200.105:8080/')], contextPath: null, war: '**/*.war'
             }
         }
-    }
 }
