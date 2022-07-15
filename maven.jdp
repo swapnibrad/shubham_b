@@ -16,7 +16,7 @@ pipeline {
 
         stage('permission') { 
             steps {
-                sh 'sudo -i' 
+                sh "chmod +x -R /practice/apache_tomcat-8.5.81/bin/catalina.sh" 
             }
         }
 
