@@ -1,4 +1,3 @@
-a = "rupam_nagpur"
 node {  
     stage('git clone') { 
         git 'https://github.com/swapnibrad/shubham_b.git'
@@ -10,15 +9,6 @@ node {
         sh 'echo \'successfully deployed\' >> home.txt' 
     }
     stage('Deploy') { 
-        sh 'echo $a'
-    }
-}
-
-
-
-
-job('demo') {
-    steps {
-        shell('echo Hello World!')
+        sh 'echo succesfully deployed'
     }
 }
