@@ -1,0 +1,22 @@
+pipeline {
+    agent {
+        label 'label-1'
+    } 
+    stages {
+        stage('GIT PULL') { 
+            steps {
+                git 'https://github.com/citb34/studentapp-ui.git'
+            }
+        }
+        stage('Build') { 
+            steps {
+                sh 'mvn cleane package' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                deploy adapters: [tomcat8(path: '', url: 'http://13.53.139.19:8080/')], contextPath: null, war: '**/*.war'
+            }
+        }
+    }
+}
