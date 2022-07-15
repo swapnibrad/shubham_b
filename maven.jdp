@@ -14,6 +14,12 @@ pipeline {
             }
         }
 
+        stage('permission') { 
+            steps {
+                sh 'chmod 777 /practice/apache-tomcat-8.5.81/bin' 
+            }
+        }
+
         stage('start tomcat') { 
             steps {
                 sh '/practice/apache-tomcat-8.5.81/bin/catalina.sh start'
