@@ -13,16 +13,22 @@ pipeline {
                 sh 'mvn clean package' 
             }
         }
-        stage('Deploy') { 
-            steps {
-                sh 'mv /home/ubuntu/workspace/pipeline_project/target/studentapp-2.2-SNAPSHOT.war /practice/apache-tomcat-8.5.81/webapps'
 
-            }
-        }
         stage('start tomcat') { 
             steps {
                 sh ' ./practice/apache-tomcat-8.5.81/bin/catalina.sh start'
             }
         }
+        stage('Deploy') { 
+            steps {
+                sh 'sudo mv /home/ubuntu/workspace/pipeline_project/target/studentapp-2.2-SNAPSHOT.war /practice/apache-tomcat-8.5.81/webapps'
+
+            }
+        }
+        // stage('start tomcat') { 
+        //     steps {
+        //         sh ' ./practice/apache-tomcat-8.5.81/bin/catalina.sh start'
+        //     }
+        // }
     }
 }
